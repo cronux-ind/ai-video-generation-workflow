@@ -1,0 +1,19 @@
+{
+  "id": "video-02",
+  "title": "VC是什么，为什么它和PE看起来像却不一样",
+  "term": "VC（Venture Capital，风险投资）",
+  "targetAudience": "关注创业和科技新闻但不懂融资逻辑的人",
+  "corePoint": "VC更早期下注高增长创业公司，接受高失败率，靠少数爆款项目覆盖风险。",
+  "analogy": "像投一批新开的餐厅，很多会关门，但一两家连锁爆发就回本并盈利。",
+  "commonMistake": "只看到成功案例，忽略VC组合里大多数项目不会成为明星公司。",
+  "actionTip": "评估VC时先看组合逻辑和阶段策略，不要只盯单个明星项目故事。",
+  "visualDirectionName": "Startup Magazine",
+  "visualDirectionPrompt": "vibrant startup media style, fast-paced magazine photography, glass office, founder pitch moments, bright cyan and orange accents, contemporary tech aesthetic",
+  "visualReferenceKeywords": [
+    "venture capital",
+    "startup pitch",
+    "seed funding",
+    "growth chart",
+    "tech founder"
+  ]
+}

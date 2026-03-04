@@ -1,0 +1,53 @@
+{
+  "videoId": "video-01",
+  "title": "PE到底是什么，和你以为的投资有何不同",
+  "segments": [
+    {
+      "segmentId": "hook",
+      "seconds": 8,
+      "narration": "你以为投资就是买卖股票？那你就错了！有一种投资，周期长达数年，不上市也能赚大钱，它就是私募股权PE。这到底是什么？",
+      "onscreenText": "PE：不上市也能赚大钱？"
+    },
+    {
+      "segmentId": "definition",
+      "seconds": 8,
+      "narration": "简单说，PE就是投资那些未上市公司，或者通过控股已上市公司，深度参与其运营和管理，以期提升价值。",
+      "onscreenText": "PE：深度参与，提升价值"
+    },
+    {
+      "segmentId": "daily_example",
+      "seconds": 10,
+      "narration": "这就像你不是买卖二手房，而是直接买下一家有潜力的餐厅，亲自改造菜单、优化服务，等它生意火爆了再卖掉。",
+      "onscreenText": "买餐厅，亲自改造再卖"
+    },
+    {
+      "segmentId": "mistake",
+      "seconds": 10,
+      "narration": "很多人把PE当成高收益理财，却忽略了它投资周期长、流动性低，且专业门槛极高，普通人难以直接参与。",
+      "onscreenText": "误区：高收益理财？"
+    },
+    {
+      "segmentId": "how_it_works",
+      "seconds": 10,
+      "narration": "PE机构，比如黑石，曾收购希尔顿酒店，通过重组和运营改善，最终实现显著回报。但高杠杆并购在加息周期也可能面临巨大风险。",
+      "onscreenText": "黑石希尔顿，高杠杆风险"
+    },
+    {
+      "segmentId": "action",
+      "seconds": 8,
+      "narration": "所以，在考虑PE类投资时，一定要先理解其超长投资期限和复杂的退出机制，看是否匹配你的资金规划。",
+      "onscreenText": "先理解周期与退出机制"
+    },
+    {
+      "segmentId": "recap_cta",
+      "seconds": 8,
+      "narration": "PE是长期价值投资，不是短线投机。想了解更多机构投资秘密，记得点赞关注，下期我们继续聊！",
+      "onscreenText": "长期价值投资，点赞关注"
+    }
+  ],
+  "generatedBy": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "generatedAt": "2026-03-04T06:37:33.194Z"
+  }
+}

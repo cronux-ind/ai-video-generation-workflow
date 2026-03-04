@@ -1,0 +1,53 @@
+{
+  "videoId": "video-03",
+  "title": "股票支撑线怎么用，为什么很多人一画就亏",
+  "segments": [
+    {
+      "segmentId": "hook",
+      "seconds": 8,
+      "narration": "很多人画了支撑线，结果反而亏得更多。这到底是怎么回事？难道支撑线根本没用吗？",
+      "onscreenText": "支撑线，一画就亏？"
+    },
+    {
+      "segmentId": "definition",
+      "seconds": 8,
+      "narration": "股票支撑线，就是股价下跌时，可能止跌反弹的区域。",
+      "onscreenText": "支撑线：止跌区域"
+    },
+    {
+      "segmentId": "daily_example",
+      "seconds": 10,
+      "narration": "想象一下，你把球扔向地面。地面有弹性，球会反弹。但如果力量太大，地面也可能被砸穿。",
+      "onscreenText": "像有弹性的地面，可能反弹"
+    },
+    {
+      "segmentId": "mistake",
+      "seconds": 10,
+      "narration": "很多新手误以为股价碰到支撑线就必涨。不设止损，一旦跌破，就容易被深度套牢。",
+      "onscreenText": "误区：必涨信号？"
+    },
+    {
+      "segmentId": "how_it_works",
+      "seconds": 10,
+      "narration": "支撑线是多空博弈形成的“价格区间”，不是精确点。2020年疫情冲击时，不少指数在前低附近反弹；但一旦跌破关键前低，常会出现加速下行。",
+      "onscreenText": "支撑是区间，非点位"
+    },
+    {
+      "segmentId": "action",
+      "seconds": 8,
+      "narration": "正确用法是：将其视为概率工具，结合成交量、市场情绪和止损位一起判断。",
+      "onscreenText": "结合多指标，设止损"
+    },
+    {
+      "segmentId": "recap_cta",
+      "seconds": 8,
+      "narration": "记住，支撑线是辅助工具，非万能药。学会灵活运用，才能避坑。点赞关注，学习更多投资干货！",
+      "onscreenText": "灵活运用，才能避坑！"
+    }
+  ],
+  "generatedBy": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "generatedAt": "2026-03-04T06:38:04.014Z"
+  }
+}

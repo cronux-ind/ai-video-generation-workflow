@@ -1,0 +1,60 @@
+{
+  "projectName": "Finance Explainer Demo",
+  "brandTagline": "60-second finance clarity",
+  "durationSec": 62,
+  "aspectRatio": "9:16",
+  "fps": 30,
+  "language": "zh-CN",
+  "voice": {
+    "persona": "calm, sharp, trustworthy",
+    "pace": "medium-fast",
+    "targetWpm": 210
+  },
+  "subtitle": {
+    "maxCharsPerLine": 18,
+    "maxLines": 2,
+    "keywordStyle": "highlight"
+  },
+  "visual": {
+    "stylePrompt": "clean editorial illustration, high contrast, finance infographic style, modern Chinese social media, bright cyan and amber accents, minimal clutter",
+    "negativePrompt": "watermark, logo, text artifacts, extra fingers, blurry, low contrast, noisy background",
+    "consistencySeed": 1024
+  },
+  "structure": [
+    {
+      "id": "hook",
+      "seconds": 8,
+      "goal": "开场完整提出核心问题，制造悬念"
+    },
+    {
+      "id": "definition",
+      "seconds": 8,
+      "goal": "一句话讲清定义"
+    },
+    {
+      "id": "daily_example",
+      "seconds": 10,
+      "goal": "生活化例子映射概念"
+    },
+    {
+      "id": "mistake",
+      "seconds": 10,
+      "goal": "指出常见误区"
+    },
+    {
+      "id": "how_it_works",
+      "seconds": 10,
+      "goal": "讲清底层逻辑"
+    },
+    {
+      "id": "action",
+      "seconds": 8,
+      "goal": "给出可执行动作"
+    },
+    {
+      "id": "recap_cta",
+      "seconds": 8,
+      "goal": "总结+行动号召"
+    }
+  ]
+}

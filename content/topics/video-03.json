@@ -1,0 +1,19 @@
+{
+  "id": "video-03",
+  "title": "股票支撑线怎么用，为什么很多人一画就亏",
+  "term": "股票支撑线",
+  "targetAudience": "会看K线但经常追涨杀跌的交易新手",
+  "corePoint": "支撑线是价格在某区间反复止跌的区域，不是精确到一根线的绝对点位。",
+  "analogy": "像地板有弹性，踩到附近可能反弹，但地板也可能被砸穿。",
+  "commonMistake": "把支撑线当成必涨信号，不设置止损，导致跌破后被动套牢。",
+  "actionTip": "把支撑线当概率工具，配合成交量和止损位一起使用。",
+  "visualDirectionName": "Trading Desk Data",
+  "visualDirectionPrompt": "realistic trading desk visuals, candlestick charts on monitors, technical analysis overlays, high-contrast black + emerald palette, data-first visual storytelling",
+  "visualReferenceKeywords": [
+    "stock support line",
+    "candlestick chart",
+    "technical analysis",
+    "trading desk",
+    "volume breakout"
+  ]
+}

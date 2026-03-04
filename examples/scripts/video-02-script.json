@@ -1,0 +1,53 @@
+{
+  "videoId": "video-02",
+  "title": "VC是什么，为什么它和PE看起来像却不一样",
+  "segments": [
+    {
+      "segmentId": "hook",
+      "seconds": 8,
+      "narration": "为什么有些公司还没盈利，就能拿到几亿甚至几十亿的融资？这背后，是风险投资VC在发挥作用。它和我们常说的PE，到底有什么不同？",
+      "onscreenText": "公司没盈利，为何能拿巨额融资？"
+    },
+    {
+      "segmentId": "definition",
+      "seconds": 8,
+      "narration": "VC，全称风险投资，它专门投资那些有高成长潜力，但同时伴随高风险的早期创业公司。",
+      "onscreenText": "VC：投资早期高成长公司"
+    },
+    {
+      "segmentId": "daily_example",
+      "seconds": 10,
+      "narration": "你可以把它想象成，你投资了一批刚开业的特色餐厅。大部分可能很快倒闭，但只要其中一两家成了像海底捞那样的连锁巨头，你的投资就赚翻了。",
+      "onscreenText": "投资一堆新餐厅，赌出海底捞"
+    },
+    {
+      "segmentId": "mistake",
+      "seconds": 10,
+      "narration": "很多人只看到像红杉资本早期投资苹果、谷歌的成功神话，却忽略了VC投资组合里，绝大多数项目最终都默默无闻，甚至失败。",
+      "onscreenText": "只看成功，忽略多数项目失败"
+    },
+    {
+      "segmentId": "how_it_works",
+      "seconds": 10,
+      "narration": "VC的底层逻辑是“撒大网”，在早期阶段下注大量公司，接受高失败率，期待少数“独角兽”带来超额回报。比如软银对WeWork的押注，就经历了估值大幅回撤。",
+      "onscreenText": "撒大网，少数爆款覆盖风险"
+    },
+    {
+      "segmentId": "action",
+      "seconds": 8,
+      "narration": "所以，评估VC时，别只盯着单个明星项目。要看它整体的投资组合、阶段策略，以及风险管理能力。",
+      "onscreenText": "看组合策略，而非单个明星"
+    },
+    {
+      "segmentId": "recap_cta",
+      "seconds": 8,
+      "narration": "VC就是用高风险换取高回报的投资策略。理解它，能帮你更懂创业和科技。关注我，学习更多金融知识！",
+      "onscreenText": "高风险高回报，关注我！"
+    }
+  ],
+  "generatedBy": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "generatedAt": "2026-03-04T06:37:48.098Z"
+  }
+}

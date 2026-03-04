@@ -1,0 +1,47 @@
+{
+  "name": "ai-video-generation-workflow",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open-source workflow for finance explainer short videos (script + slides + voice + subtitles + render).",
+  "scripts": {
+    "plan": "tsx src/scripts/plan.ts",
+    "qa": "tsx src/scripts/qa.ts",
+    "script:gen": "tsx src/scripts/generate-script.ts",
+    "image:gen": "tsx src/scripts/generate-image.ts",
+    "slides:prepare": "tsx src/scripts/prepare-notebooklm.ts",
+    "slides:import": "tsx src/scripts/import-slides.ts",
+    "voice:list": "tsx src/scripts/list-eleven-voices.ts",
+    "voice:gen": "tsx src/scripts/generate-voice.ts",
+    "video:render": "tsx src/scripts/render-video.ts",
+    "build:all": "npm run plan && npm run qa",
+    "run:assets": "npm run plan && npm run qa && npm run script:gen && npm run image:gen && npm run voice:gen",
+    "run:all": "npm run run:assets && npm run video:render"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.28"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haolinwang819-boop/ai-video-generation-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haolinwang819-boop/ai-video-generation-workflow/issues"
+  },
+  "homepage": "https://github.com/haolinwang819-boop/ai-video-generation-workflow#readme",
+  "keywords": [
+    "finance",
+    "video-workflow",
+    "ai",
+    "notebooklm",
+    "tts",
+    "subtitles",
+    "ffmpeg"
+  ]
+}

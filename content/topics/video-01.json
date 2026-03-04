@@ -1,0 +1,19 @@
+{
+  "id": "video-01",
+  "title": "PE到底是什么，和你以为的投资有何不同",
+  "term": "PE（Private Equity，私募股权）",
+  "targetAudience": "知道股票但不了解机构投资方式的职场人",
+  "corePoint": "PE主要投未上市或控股型项目，靠经营改善与退出实现回报，不是短线买卖。",
+  "analogy": "像买下一家店并亲自升级运营，而不是在二手市场倒手商品。",
+  "commonMistake": "把PE当成高收益理财产品，忽略了周期长、流动性低和专业门槛。",
+  "actionTip": "先理解投资期限和退出机制，再评估是否匹配自己的资金安排。",
+  "visualDirectionName": "Institutional Documentary",
+  "visualDirectionPrompt": "serious institutional finance documentary, Bloomberg-style newsroom and boardroom photography, dark navy + steel palette, sharp lens, premium editorial look",
+  "visualReferenceKeywords": [
+    "private equity",
+    "boardroom",
+    "M&A deal",
+    "institutional investment",
+    "due diligence"
+  ]
+}
