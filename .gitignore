@@ -22,6 +22,7 @@ dist/
 *.jpg
 *.jpeg
 *.webp
+!showcase/*.mp4
 
 # Local documents (optional)
 *.pdf

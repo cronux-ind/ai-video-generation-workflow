@@ -4,6 +4,20 @@ An open-source workflow for generating short finance explainer videos with **scr
 
 `AI Video Generation Workflow` focuses on reliability for batch production (e.g., 3 themed videos with consistent style), instead of relying purely on text-to-video models with unstable output quality.
 
+## Demo Videos
+
+PE Demo:
+
+<video src="./showcase/pe-case-demo.mp4" controls muted playsinline width="360"></video>
+
+[Open PE demo video](./showcase/pe-case-demo.mp4)
+
+VC Demo:
+
+<video src="./showcase/vc-case-demo.mp4" controls muted playsinline width="360"></video>
+
+[Open VC demo video](./showcase/vc-case-demo.mp4)
+
 ## Why This Project
 
 - Stable, reproducible pipeline for short-form finance content.
